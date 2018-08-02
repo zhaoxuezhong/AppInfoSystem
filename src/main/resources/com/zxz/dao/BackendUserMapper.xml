@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zxz.dao.BackendUserMapper">
+	
+	<select id="getBackendUser" parameterType="BackendUser" resultType="BackendUser">
+		select bu.*,dd.valueName userTypeName
+		from 
+			backend_user bu ,data_dictionary dd
+		where 
+			dd.typeCode='USER_TYPE' and valueId=bu.userType
+			and userCode=#{userCode} and userPassword=#{userPassword}
+	</select>
+
+</mapper>
