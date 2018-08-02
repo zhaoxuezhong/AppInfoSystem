@@ -2,8 +2,6 @@ package com.zxz.utils;
 
 import java.util.List;
 
-import com.zxz.utils.Constants;
-
 /**
  * @author zhaoxuezhong
  *
@@ -31,7 +29,7 @@ public class PageInfo<T> {
 	}
 	public void setPageIndex(Integer pageIndex) {
 		if(pageIndex==null||pageIndex<1){
-			pageIndex=Constants.PAGEINDEX;
+			pageIndex=1;
 		}
 		if(pageIndex>getPageTotalCount()){
 			pageIndex=getPageTotalCount();
@@ -43,7 +41,7 @@ public class PageInfo<T> {
 	}
 	public void setPageSize(Integer pageSize) {
 		if(pageSize==null||pageSize<1){
-			pageSize=Constants.PAGESIZE;
+			pageIndex=1;
 		}		
 		this.pageSize = pageSize;
 	}

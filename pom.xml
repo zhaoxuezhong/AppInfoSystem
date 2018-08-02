@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.zxz</groupId>
-  <artifactId>ssm_templet</artifactId>
+  <artifactId>AppInfoSystem</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>ssm_templet Maven Webapp</name>
+  <name>AppInfoSystem</name>
   <url>http://maven.apache.org</url>
   
 	<properties>
@@ -209,6 +209,6 @@
     </dependencies>
 
   <build>
-    <finalName>ssm_templet</finalName>
+    <finalName>AppInfoSystem</finalName>
   </build>
 </project>
